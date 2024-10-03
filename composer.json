@@ -1,0 +1,25 @@
+{
+    "name": "flynn314/server-health",
+    "description": "Server health.",
+    "keywords": ["server", "health", "connect"],
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2.0",
+        "laravel-zero/framework": "^11.0.0",
+        "laravel/pulse": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "bin": ["artisan"]
+}
