@@ -42,6 +42,6 @@ final class HealthCommand extends Command
 
     public function schedule(Schedule $schedule): void
     {
-        $schedule->command(static::class)->everyFifteenSeconds();
+        $schedule->command(static::class)->everyFifteenSeconds()->withoutOverlapping();
     }
 }
